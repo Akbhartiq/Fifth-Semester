@@ -1,0 +1,11 @@
+SHELL=/bin/sh 
+CC=gcc
+CFLAGS=-O2 -g -I.
+LEXTARGET= lex.yy.c 
+LEXINPUT=ass3_22CS30007_22CS10083.l
+
+
+phony1: $(LEXINPUT)
+	lex $(LEXINPUT)
+	gcc ass3_22CS30007_22CS10083.c 
+
